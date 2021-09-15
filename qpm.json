@@ -5,8 +5,10 @@
     "name": "cpp-semver",
     "id": "cpp-semver",
     "version": "0.1.0",
-    "url": null,
-    "additionalData": {}
+    "url": "https://github.com/RedBrumbler/cpp-semver",
+    "additionalData": {
+      "headersOnly": true
+    }
   },
   "dependencies": [],
   "additionalData": {}
