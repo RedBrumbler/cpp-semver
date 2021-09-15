@@ -147,10 +147,10 @@ jobs:
       run: ./QPM/QPM restore
     
     #list what files are in the extern folder and in qpm temp folder
-    - name: List Post Restore
-      run: |
-        ls -la ${GITHUB_WORKSPACE}/extern/
-        ls -la QPM_Temp
+#    - name: List Post Restore
+#      run: |
+#        ls -la ${GITHUB_WORKSPACE}/extern/
+#        ls -la QPM_Temp
 
 #    - name: CD to bs-hook src
 #      run: |
