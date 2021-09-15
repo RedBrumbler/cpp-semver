@@ -18,12 +18,12 @@ TARGET_ARCH_ABI := $(APP_ABI)
 rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := cpp-semver
+LOCAL_MODULE := cpp-semver_0_1_0
 LOCAL_SRC_FILES += $(call rwildcard,src/**,*.cpp)
 LOCAL_SRC_FILES += $(call rwildcard,extern/beatsaber-hook/src/inline-hook,*.cpp)
 LOCAL_SRC_FILES += $(call rwildcard,extern/beatsaber-hook/src/inline-hook,*.c)
 LOCAL_LDLIBS += -llog -lz
-LOCAL_CFLAGS += -DID='"cpp-semver-test"' -DVERSION='"0.1.0"' -Wno-inaccessible-base -O2
+LOCAL_CFLAGS += -DID='"cpp-semver"' -DVERSION='"0.1.0"' -Wno-inaccessible-base -O2 -I'./shared' -I'./extern'
 LOCAL_C_INCLUDES += ./include ./src ./extern ./extern/codegen/include ./extern/libil2cpp/il2cpp/libil2cpp ./shared
 LOCAL_CPP_FEATURES += rtti exceptions
 include $(BUILD_SHARED_LIBRARY)
