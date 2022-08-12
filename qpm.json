@@ -4,7 +4,7 @@
   "info": {
     "name": "cpp-semver",
     "id": "cpp-semver",
-    "version": "0.0.0",
+    "version": "0.1.2",
     "url": "https://github.com/RedBrumbler/cpp-semver",
     "additionalData": {
       "headersOnly": true
